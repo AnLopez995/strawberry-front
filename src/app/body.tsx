@@ -8,6 +8,10 @@ const Body: React.FC<Props> = () => {
   return (
     <div>
       <h2>Hola perro</h2>
+      <table>
+        <thead></thead>
+        <tbody></tbody>
+      </table>
     </div>
   );
 }
