@@ -4,15 +4,15 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 134, 150, 80; /* Azul oscuro en RGB */
-  --background-end-rgb: 134, 150, 80; /* Azul oscuro en RGB */
+  --background-start-rgb: 246, 246, 246; /* Azul oscuro en RGB */
+  --background-end-rgb: 246, 246, 246; /* Azul oscuro en RGB */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 134, 150, 80; /* Azul oscuro en RGB */
-    --background-end-rgb: 134, 150, 80; /* Azul oscuro en RGB */
+    --background-start-rgb: 246, 246, 246; /* Azul oscuro en RGB */
+    --background-end-rgb: 246, 246, 246; /* Azul oscuro en RGB */
   }
 }
 
