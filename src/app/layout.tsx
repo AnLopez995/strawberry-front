@@ -16,48 +16,85 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <header className="text-white p-4 bg-bg-primary">
-            <nav>
-              <div className="flex justify-around">
-              <Link href='/home'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 h-6 text-blue-500 sm:h-9">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
-                  </svg>
-                </Link>
-                <ul className="flex">
+    <html lang="en" className="h-full">
+      <body className={`flex flex-col ${inter.className} min-h-full`}>
+        <header className="text-white p-4 bg-white">
+          <nav className="flex flex-wrap items-center justify-between p-0 border-gray-50">
+            <div className="container mx-auto flex max-w-screen items-center justify-between">
+              <Link href="/home" className="flex items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="mr-3 h-6 text-blue-500 sm:h-9"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+                  />
+                </svg>
+              </Link>
+              <ul className="flex">
                 <Link href="/home" className="hover:underline">
                   <li aria-current="page">
-                  <button type="button" className="rounde mr-3 hidden bg-bg-primary py-1.5 px-6 text-center text-sm font-medium
-                   text-white hover:bg-bg-secondary hover:text-bg-primary focus:outline-none focus:ring-4 focus:ring-white md:mr-0 md:inline-block 
-                   rounded-lg">Home</button>
+                    <button
+                      type="button"
+                      className="rounde mr-3 hidden bg-white py-1.5 px-6 text-center text-sm font-medium
+                   text-tittle-primary hover:bg-bg-secondary hover:text-bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white md:mr-2 md:inline-block 
+                   rounded-lg"
+                    >
+                      Home
+                    </button>
                   </li>
                 </Link>
                 <Link href="/products" className="hover:underline">
-                <li aria-current="page">
-                  <button type="button" className="rounde mr-3 hidden bg-bg-primary py-1.5 px-6 text-center text-sm font-medium
-                   text-white hover:bg-bg-secondary hover:text-bg-primary focus:outline-none focus:ring-4 focus:ring-white md:mr-0 md:inline-block 
-                   rounded-lg">Products</button>
+                  <li aria-current="page">
+                    <button
+                      type="button"
+                      className="rounde mr-3 hidden bg-white py-1.5 px-6 text-center text-sm font-medium
+                      text-tittle-primary hover:bg-bg-secondary hover:text-bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white md:mr-2 md:inline-block 
+                      rounded-lg"
+                    >
+                      Products
+                    </button>
                   </li>
                 </Link>
-                <Link href="/about" className="hover:underline">
-                <li aria-current="page">
-                  <button type="button" className="rounde mr-3 hidden bg-bg-primary py-1.5 px-6 text-center text-sm font-medium
-                   text-white hover:bg-bg-secondary hover:text-bg-primary focus:outline-none focus:ring-4 focus:ring-white md:mr-0 md:inline-block 
-                   rounded-lg">About</button>
+                <Link href="/contact" className="hover:underline">
+                  <li aria-current="page">
+                    <button
+                      type="button"
+                      className="rounde mr-3 hidden bg-white py-1.5 px-6 text-center text-sm font-medium
+                      text-tittle-primary hover:bg-bg-secondary hover:text-bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white md:mr-2 md:inline-block 
+                      rounded-lg"
+                    >
+                      About Us
+                    </button>
                   </li>
                 </Link>
-                </ul>
-                <Link href='/login'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 h-6 text-blue-500 sm:h-9">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
-                  </svg>
-                </Link>
-              </div>
-            </nav>
+              </ul>
+              <Link href="/login">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="mr-3 h-6 text-blue-500 sm:h-9"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </nav>
         </header>
-        {children}
+        <main className="flex-grow">{children}</main>
         <footer className="bg-gray-800 text-white py-3">
           <p className="text-center">Todos los derechos reservados</p>
         </footer>

@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "GLASS BERRY",
+      "body": "Bootstrap Carousel Example",
+      "src": "/storage/img/glassBerry.jpeg",
+      "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
+    },
+    {
+      "id": 2,
+      "title": "LUX BERRY",
+      "body": "Bootstrap Carousel Example",
+      "src": "/storage/img/Lux Berry.jpeg",
+      "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
+    },
+    {
+      "id": 3,
+      "title": "STRAWBERRY",
+      "body": "Bootstrap Carousel Example",
+      "src": "/storage/img/strawBerry.jpeg",
+      "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
+    },
+    {
+      "id": 4,
+      "title": "SURPRISE BERRY",
+      "body": "Bootstrap Carousel Example",
+      "src": "/storage/img/surpriseBerry.jpeg",
+      "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
+    }
+  ]
+}
